@@ -20,10 +20,15 @@ class Neighborhood {
   }
 
   customers() {
-    return this.deliveries().map(delivery =>
-      delivery.customer()
-  )}
+    return this.deliveries().map(delivery => delivery.customer())
+  }
 }
+
+drivers() {
+    return this.trips().map(trip => {
+      return trip.driver();
+    });
+  }
 
 class Customer {
   constructor(name, neighborhoodId) {
