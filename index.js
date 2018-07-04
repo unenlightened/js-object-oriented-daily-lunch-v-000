@@ -62,6 +62,10 @@ class Meal {
       delivery.customer()
     ))]
   }
+
+  byPrice() {
+    
+  }
 }
 
 class Delivery {
