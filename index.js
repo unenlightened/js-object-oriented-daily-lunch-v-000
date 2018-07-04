@@ -42,6 +42,10 @@ class Customer {
     return this.deliveries().map(delivery =>
       delivery.meal()
   )}
+
+  totalSpent() {
+    return meals().reduce(meal => meal.price)
+  }
 }
 
 class Meal {
@@ -69,9 +73,6 @@ class Meal {
     })
   }
 }
-
-
-
 
 class Delivery {
   constructor(mealId, neighborhoodId, customerId) {
