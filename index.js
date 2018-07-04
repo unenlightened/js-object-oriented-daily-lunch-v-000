@@ -63,7 +63,7 @@ class Meal {
     ))]
   }
 
-  byPrice() {
+  this.byPrice() {
 
   }
 
