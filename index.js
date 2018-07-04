@@ -63,9 +63,7 @@ class Meal {
     ))]
   }
 
-  function byPrice() {
-    
-  }
+  
 }
 
 class Delivery {
