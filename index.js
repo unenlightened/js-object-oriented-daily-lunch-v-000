@@ -44,8 +44,8 @@ class Customer {
   )}
 
   totalSpent() {
-    return meals().reduce((meal, total) =>
-      meal.price + total, 
+    return this.meals().reduce((meal, total) =>
+      meal.price + total,
     0)
   }
 }
