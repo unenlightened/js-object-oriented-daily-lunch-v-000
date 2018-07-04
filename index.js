@@ -25,9 +25,10 @@ class Neighborhood {
   }
 
   meals() {
-    return this.deliveries().map(delivery =>
+    return  [...new Set(this.deliveries().map(delivery =>
       delivery.meal()
-  )}
+    ))]
+  }
 }
 
 class Customer {
