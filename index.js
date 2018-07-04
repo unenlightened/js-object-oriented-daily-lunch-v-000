@@ -19,8 +19,8 @@ class Neighborhood {
   )}
 
   customers() {
-    return Set(this.deliveries().map(delivery => {
-      let customer = delivery.customer()
+    return Set(this.deliveries().map(delivery =>
+      delivery.customer()
     ))
   }
 }
