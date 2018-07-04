@@ -23,6 +23,11 @@ class Neighborhood {
       delivery.customer()
     ))]
   }
+
+  meals() {
+    return this.deliveries().map(delivery =>
+      delivery.meal()
+  )}
 }
 
 class Customer {
