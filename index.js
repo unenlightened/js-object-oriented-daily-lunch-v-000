@@ -39,9 +39,9 @@ class Customer {
   )}
 
   meals() {
-    return this.deliveries().map(delivery => 
+    return [...new Set(this.deliveries().map(delivery =>
       delivery.meal()
-    )
+    ))]
   }
 }
 
@@ -57,6 +57,12 @@ class Meal {
     return store.deliveries.filter(delivery =>
       delivery.mealId === this.id
   )}
+
+  customers() {
+    return [...new Set(this.deliveries().map(delivery =>
+      delivery.customer()
+    ))]
+  }
 }
 
 class Delivery {
