@@ -24,11 +24,6 @@ class Neighborhood {
   }
 }
 
-drivers() {
-    return this.trips().map(trip => {
-      return trip.driver();
-    });
-  }
 
 class Customer {
   constructor(name, neighborhoodId) {
