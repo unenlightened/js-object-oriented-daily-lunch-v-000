@@ -39,9 +39,9 @@ class Customer {
   )}
 
   meals() {
-    return [...new Set(this.deliveries().map(delivery =>
+    return this.deliveries().map(delivery =>
       delivery.meal()
-    ))]
+    )
   }
 }
 
