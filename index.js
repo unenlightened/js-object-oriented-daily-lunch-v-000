@@ -25,11 +25,6 @@ class Neighborhood {
   }
 }
 
-// drivers() {
-//     return this.trips().map(trip => {
-//       return trip.driver();
-//     });
-//   }
 class Customer {
   constructor(name, neighborhoodId) {
     this.id = customerId++
@@ -42,6 +37,12 @@ class Customer {
     return store.deliveries.filter(delivery =>
       delivery.customerId === this.id
   )}
+
+  meals() {
+    return [...new Set(this.deliveries().map(delivery =>
+      delivery.meal()
+    ))]
+  }
 }
 
 class Meal {
