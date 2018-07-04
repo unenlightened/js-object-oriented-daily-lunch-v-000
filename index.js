@@ -19,18 +19,26 @@ class Neighborhood {
     )
   }
 
-  customers() {
-    return this.deliveries().map(delivery => delivery.customer())
-  }
+
 }
 
-
+// drivers() {
+//     return this.trips().map(trip => {
+//       return trip.driver();
+//     });
+//   }
 class Customer {
   constructor(name, neighborhoodId) {
     this.id = customerId++
     this.name = name
     this.neighborhoodId = neighborhoodId
     store.customers.push(this)
+  }
+
+  deliveries() {
+    return store.deliveries.filter(delivery =>
+      delivery.customerId === this.id
+    )
   }
 }
 
