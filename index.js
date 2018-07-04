@@ -52,12 +52,6 @@ class Meal {
     return store.deliveries.filter(delivery =>
       delivery.mealId === this.id
   )}
-
-  customers() {
-    let customers = this.deliveries().map(delivery =>
-      delivery.meal())
-    return customers
-  }
 }
 
 class Delivery {
