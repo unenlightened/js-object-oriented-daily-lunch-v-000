@@ -55,7 +55,7 @@ class Meal {
 
   customers() {
     return store.deliveries[0]
-  )}
+  }
 }
 
 class Delivery {
