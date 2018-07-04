@@ -56,7 +56,7 @@ class Meal {
   customers() {
     let customers = this.deliveries().map(delivery =>
       delivery.meal())
-    return customers.uniq
+    return customers
   }
 }
 
