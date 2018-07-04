@@ -63,7 +63,7 @@ class Meal {
     ))]
   }
 
-  function byPrice() {
+  byPrice() {
 
   }
 
