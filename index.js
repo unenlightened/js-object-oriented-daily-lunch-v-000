@@ -50,9 +50,8 @@ class Customer {
   )}
 
   totalSpent() {
-    return this.meals().reduce(function(meal, total) {
-      meal.price() + total
-    }, 0)
+    return this.meals()
+    
   }
 }
 
