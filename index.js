@@ -20,3 +20,20 @@ class Customer {
     this.neighborhoodId = neighborhoodId
   }
 }
+
+class Meal {
+  constructor(title, price) {
+    this.id = mealId++
+    this.title = title
+    this.price = price
+  }
+}
+
+class Delivery {
+  constructor(mealId, neighborhoodId, customerId) {
+    this.id = deliveryId++
+    this.mealId = mealId
+    this.neighborhoodId = neighborhoodId
+    this.customerId = customerId
+  }
+}
