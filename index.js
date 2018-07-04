@@ -54,7 +54,7 @@ class Meal {
   )}
 
   customers() {
-    return story.deliveries[0]
+    return store.deliveries[0]
   )}
 }
 
