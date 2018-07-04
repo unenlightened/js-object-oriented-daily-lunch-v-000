@@ -62,12 +62,8 @@ class Meal {
       delivery.customer()
     ))]
   }
-
-  Meal.prototype.byPrice() {
-
-  }
-
 }
+
 
 
 
