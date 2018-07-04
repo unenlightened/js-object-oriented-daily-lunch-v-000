@@ -18,7 +18,9 @@ class Neighborhood {
       delivery.neighborhoodId === this.id
   )}
 
-
+  customers() {
+    return this.deliveries()
+  }
 }
 
 // drivers() {
