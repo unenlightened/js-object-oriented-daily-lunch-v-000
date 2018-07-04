@@ -63,12 +63,13 @@ class Meal {
     ))]
   }
 
+  function byPrice() {
+
+  }
 
 }
 
-function byPrice() {
 
-}
 
 class Delivery {
   constructor(mealId, neighborhoodId, customerId) {
