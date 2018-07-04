@@ -18,6 +18,11 @@ class Neighborhood {
       delivery.neighborhoodId === this.id
     )
   }
+
+  customers() {
+    return this.deliveries().map( delivery =>
+      delivery.customer
+  )}
 }
 
 class Customer {
@@ -46,4 +51,14 @@ class Delivery {
     this.customerId = customerId
     store.deliveries.push(this)
   }
+
+  meal() {
+    return store.meals.find(meal =>
+      meal.id === this.mealId
+  )}
+
+  customer() {
+    return store.customers.find(customer =>
+      customer.id === this.customerId
+  )}
 }
