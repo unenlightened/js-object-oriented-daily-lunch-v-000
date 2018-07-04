@@ -54,7 +54,9 @@ class Meal {
   )}
 
   customers() {
-    return this.deliveries().map(delivery => delivery.meal() ).unique()
+    customers = this.deliveries().map(delivery => 
+      delivery.meal())
+    return customers.unique()
   }
 }
 
